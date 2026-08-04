@@ -1,1 +1,402 @@
+/* ===========================
+   GLOBAL
+=========================== */
 
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    background:#F4F1F2;
+    color:#222;
+
+    font-family:'Merriweather', serif;
+
+    overflow-x:hidden;
+
+}
+
+/* ===========================
+   NAVIGATION
+=========================== */
+
+header{
+
+    width:100%;
+
+    padding:40px 70px;
+
+}
+
+.nav-line{
+
+    width:100%;
+    height:1px;
+    background:#222;
+
+}
+
+nav{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:22px 0;
+
+}
+
+.logo{
+
+    font-family:'Inter', sans-serif;
+
+    letter-spacing:3px;
+
+    font-size:.8rem;
+
+}
+
+.menu-button{
+
+    border:none;
+
+    background:none;
+
+    cursor:pointer;
+
+    font-size:2rem;
+
+}
+
+/* ===========================
+   MENU
+=========================== */
+
+.menu-overlay{
+
+    position:fixed;
+
+    inset:0;
+
+    background:#F4F1F2;
+
+    display:none;
+
+    justify-content:center;
+
+    align-items:center;
+
+    z-index:100;
+
+}
+
+.menu-overlay.active{
+
+    display:flex;
+
+}
+
+.menu-overlay ul{
+
+    list-style:none;
+
+    text-align:center;
+
+}
+
+.menu-overlay li{
+
+    margin:28px 0;
+
+}
+
+.menu-overlay a{
+
+    text-decoration:none;
+
+    color:#222;
+
+    font-family:'Anton', sans-serif;
+
+    font-size:3rem;
+
+    letter-spacing:2px;
+
+}
+
+.close-button{
+
+    position:absolute;
+
+    top:40px;
+
+    left:60px;
+
+    border:none;
+
+    background:none;
+
+    font-size:3rem;
+
+    cursor:pointer;
+
+}
+
+/* ===========================
+   HERO
+=========================== */
+
+.hero{
+
+    width:min(1400px,92%);
+
+    margin:90px auto;
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:90px;
+
+    align-items:center;
+
+}
+
+.section-label{
+
+    font-family:'Inter',sans-serif;
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    margin-bottom:25px;
+
+}
+
+.hero h1{
+
+    font-family:'Anton',sans-serif;
+
+    font-size:7rem;
+
+    line-height:.92;
+
+    font-weight:400;
+
+}
+
+.tagline{
+
+    margin-top:35px;
+
+}
+
+.tagline p{
+
+    font-size:1.1rem;
+
+    margin-bottom:10px;
+
+}
+
+.hero-right{
+
+    position:relative;
+
+}
+
+.hero-image{
+
+    width:100%;
+
+    max-width:560px;
+
+    display:block;
+
+}
+
+.intro-card{
+
+    position:absolute;
+
+    bottom:-70px;
+
+    left:-60px;
+
+    background:white;
+
+    padding:40px;
+
+    width:360px;
+
+    box-shadow:0 18px 40px rgba(0,0,0,.08);
+
+}
+
+.intro-card p{
+
+    line-height:1.8;
+
+    margin-bottom:25px;
+
+}
+
+.intro-card a{
+
+    text-decoration:none;
+
+    color:#456A9A;
+
+    font-family:'Inter',sans-serif;
+
+    font-weight:600;
+
+}
+
+/* ===========================
+   ABOUT
+=========================== */
+
+.about{
+
+    width:min(1300px,90%);
+
+    margin:220px auto 150px;
+
+}
+
+.about-grid{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    gap:80px;
+
+    align-items:start;
+
+}
+
+.about-image{
+
+    width:100%;
+
+}
+
+.about h2{
+
+    font-family:'Anton',sans-serif;
+
+    font-size:4rem;
+
+    margin-bottom:40px;
+
+}
+
+.about p{
+
+    line-height:2;
+
+    margin-bottom:28px;
+
+}
+
+.signature{
+
+    width:180px;
+
+    margin-top:30px;
+
+}
+
+/* ===========================
+   FOOTER
+=========================== */
+
+footer{
+
+    width:min(1200px,90%);
+
+    margin:120px auto 70px;
+
+}
+
+.footer-line{
+
+    width:100%;
+
+    height:1px;
+
+    background:#222;
+
+    margin-bottom:30px;
+
+}
+
+footer p{
+
+    font-family:'Inter',sans-serif;
+
+    font-size:.85rem;
+
+    letter-spacing:2px;
+
+}
+
+/* ===========================
+   MOBILE
+=========================== */
+
+@media(max-width:950px){
+
+.hero{
+
+grid-template-columns:1fr;
+
+gap:80px;
+
+}
+
+.about-grid{
+
+grid-template-columns:1fr;
+
+}
+
+.hero h1{
+
+font-size:4.5rem;
+
+}
+
+.intro-card{
+
+position:relative;
+
+left:0;
+
+bottom:0;
+
+width:100%;
+
+margin-top:30px;
+
+}
+
+header{
+
+padding:30px;
+
+}
+
+}
