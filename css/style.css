@@ -552,13 +552,17 @@ GALLERY
 
     display:flex;
 
-    gap:40px;
+    gap:50px;
 
     overflow-x:auto;
 
     scroll-behavior:smooth;
 
-    padding-bottom:20px;
+    scroll-snap-type:x mandatory;
+
+    align-items:center;
+
+    padding:20px 10px 30px;
 
 }
 
@@ -576,17 +580,23 @@ GALLERY
 
 .painting{
 
-    width:480px;
+    width:420px;
 
-    height:640px;
+    aspect-ratio:4 / 5;
 
-    object-fit:cover;
+    object-fit:contain;
+
+    background:white;
+
+    padding:20px;
 
     cursor:pointer;
 
-    transition:.3s;
-
     flex-shrink:0;
+
+    scroll-snap-align:center;
+
+    transition:.3s;
 
 }
 
