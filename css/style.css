@@ -477,5 +477,122 @@ padding:30px;
 
 }
 
+/*============================
 
+GALLERY
+
+=============================*/
+
+.gallery-page{
+
+    width:min(1500px,92%);
+    margin:80px auto;
+
+    display:grid;
+
+    grid-template-columns:320px 1fr;
+
+    gap:70px;
+
+}
+
+.gallery-info{
+
+    position:sticky;
+
+    top:120px;
+
+    align-self:start;
+
+}
+
+.gallery-label{
+
+    font-family:'Inter',sans-serif;
+
+    letter-spacing:4px;
+
+    font-size:.8rem;
+
+    margin-bottom:18px;
+
+}
+
+.gallery-info h1{
+
+    font-family:'Anton',sans-serif;
+
+    font-size:5rem;
+
+    line-height:.95;
+
+    margin-bottom:60px;
+
+}
+
+.painting-details h2{
+
+    font-family:'Anton',sans-serif;
+
+    font-size:2.2rem;
+
+    line-height:1;
+
+    margin:15px 0;
+
+}
+
+.painting-details p{
+
+    line-height:2;
+
+}
+
+.gallery-carousel{
+
+    display:flex;
+
+    gap:40px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    padding-bottom:20px;
+
+}
+
+.gallery-carousel::-webkit-scrollbar{
+
+    height:8px;
+
+}
+
+.gallery-carousel::-webkit-scrollbar-thumb{
+
+    background:#C1521E;
+
+}
+
+.painting{
+
+    width:480px;
+
+    height:640px;
+
+    object-fit:cover;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    flex-shrink:0;
+
+}
+
+.painting:hover{
+
+    transform:scale(.98);
+
+}
 
