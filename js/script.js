@@ -21,3 +21,36 @@ menuOverlay.addEventListener("click", (event) => {
     }
 
 });
+
+/* ======================
+
+Gallery
+
+====================== */
+
+const paintings = document.querySelectorAll(".painting");
+
+if(paintings.length){
+
+const title=document.getElementById("paintingTitle");
+const year=document.getElementById("paintingYear");
+const medium=document.getElementById("paintingMedium");
+const size=document.getElementById("paintingSize");
+
+paintings.forEach(painting=>{
+
+painting.addEventListener("click",()=>{
+
+title.textContent=painting.dataset.title;
+
+year.textContent=painting.dataset.year;
+
+medium.textContent=painting.dataset.medium;
+
+size.textContent=painting.dataset.size;
+
+});
+
+});
+
+}
