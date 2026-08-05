@@ -400,3 +400,35 @@ padding:30px;
 }
 
 }
+
+/* ===========================
+   INTERIOR PAGE HERO
+=========================== */
+
+.page-hero{
+
+    width:min(1400px,90%);
+    margin:120px auto;
+
+}
+
+.page-hero h1{
+
+    font-family:'Anton', sans-serif;
+    font-size:7rem;
+    font-weight:400;
+    line-height:.95;
+    margin:20px 0;
+
+}
+
+.page-intro{
+
+    max-width:600px;
+    font-size:1.1rem;
+    line-height:2;
+
+}
+
+
+
